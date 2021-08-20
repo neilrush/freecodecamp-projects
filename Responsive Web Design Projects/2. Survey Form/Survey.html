@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="Survey.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Hachicord Survey</h1>
+          <p id="description" class="description text-center">
+            Thanks for helping our discord grow.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div id="name-field" class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div id="email-field" class="form-group">
+            <label id="email-label" for="name">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div id="age-field" class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              class="form-control"
+              placeholder="Enter your age"
+              min="10"
+              max="99"
+            />
+          </div>
+          <div id="discord-role" class="form-group">
+            <label id="dropdown-label" for="dropdown"
+              >Current discord role</label
+            >
+            <select name="dropdown" id="dropdown" class="form-control" required>
+              <option disabled selected value="">Select current role</option>
+              <option value="hahaa aw">hahaa aw</option>
+              <option value="pretty people on the inside">
+                pretty people on the inside
+              </option>
+              <option value="extra thicc big bois">extra thicc big bois</option>
+              <option value="bringing pma to hachicord">
+                bringing pma to hachicord
+              </option>
+              <option value="hello friends">hello friends</option>
+              <option value="here for the emotes hahaa">
+                here for the emotes hahaa
+              </option>
+              <option value="hahaa aw">hahaa aw</option>
+            </select>
+          </div>
+          <div id="participated-question" class="form-group">
+            <p>How often do you use voice chat?</p>
+            <label>
+              <input
+                name="voice-chat-frequency"
+                value="Every day"
+                type="radio"
+                class="input-radio"
+                checked
+              />
+              Every day
+            </label>
+            <label>
+              <input
+                name="voice-chat-frequency"
+                value="Once a week"
+                type="radio"
+                class="input-radio"
+              />
+              Once a week
+            </label>
+            <label>
+              <input
+                name="voice-chat-frequency"
+                value="Once a month"
+                type="radio"
+                class="input-radio"
+              />
+              Once a month
+            </label>
+            <label>
+              <input
+                name="voice-chat-frequency"
+                value="Hardly ever"
+                type="radio"
+                class="input-radio"
+              />
+              Hardly ever
+            </label>
+          </div>
+          <div id="activities-question" class="form-group">
+            <p>
+              What activities have you participated in? (Check all that apply)
+            </p>
+            <label>
+              <input
+                name="activities"
+                value="Pin Bracket"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Pin Bracket
+            </label>
+            <label>
+              <input
+                name="activities"
+                value="Movie Night"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Movie Night
+            </label>
+            <label>
+              <input
+                name="activities"
+                value="Dotes?"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Dotes?
+            </label>
+            <label>
+              <input
+                name="activities"
+                value="Irl meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Irl meetups
+            </label>
+          </div>
+          <div id="addional-comments-field" class="form-group">
+            <label for="comments">Additional comments</label>
+            <textarea
+              name="comments"
+              id="comments"
+              class="form-control"
+              type="text"
+            ></textarea>
+          </div>
+          <div id="form-submit-button" class="form-group">
+            <button class="form-control" id="submit" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
