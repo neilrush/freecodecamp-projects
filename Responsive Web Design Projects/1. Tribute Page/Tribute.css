@@ -1,10 +1,11 @@
 body {
   text-align: center;
-  background-color: hsl(180deg, 13%, 82%);
+  background-color: rgb(190, 190, 190);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #363030;
   margin: 0;
+  min-width: 300px;
 }
 
 h1 {
@@ -12,24 +13,44 @@ h1 {
 }
 
 #img-div {
-  background: #e8e9eb;
+  background: #e6e7eb;
   padding: 1rem;
   margin: 0 auto;
 }
 
 img {
-  border-radius: 2%;
+  border-radius: 0.5rem;
   max-width: 100%;
   display: block;
   max-height: 50vh;
   margin: 0 auto;
 }
 
+#img-caption {
+  padding-top: 1rem;
+}
+
 #tribute-info {
-  padding: 1rem;
+  padding: 2rem;
+  margin: 1rem auto 1rem auto;
   text-align: left;
+  max-width: 700px;
+}
+
+@media (max-width: 400px) {
+  #tribute-info {
+    padding: 1rem;
+  }
 }
 
 #tribute-link-text {
   padding: 1rem;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: rgb(42, 74, 255)
 }
