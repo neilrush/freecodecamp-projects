@@ -1,4 +1,4 @@
 # freecodecamp-projects
-my project files for freecodecamp certifications
+My project files for freecodecamp certifications
 
-[view pages](https://freecodecamp.redgummy.fish/)
+[View pages](https://freecodecamp.redgummy.fish/)
