@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Walter+Turncoat&display=swap");
+
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  min-width: 310px;
+  background-color: rgb(163, 228, 173);
+  font-size: 2re;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(143, 206, 152);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  font-family: "Walter Turncoat", cursive;
+  width: 50vw;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-family: "Walter Turncoat", cursive;
+  white-space: nowrap;
+  width: 60vw;
+}
+
+#header-img {
+  padding: 0.2rem;
+  height: 50px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 100px auto 0 auto;
+  max-width: 1000px;
+  padding: 0 15px 0 15px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 750px) {
+  .nav-links {
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 50px; /* offset for the hidden bullet points */
+    height: 100px;
+  }
+
+  .nav-link {
+    padding: top;
+  }
+
+  .page {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 310px;
+  }
+
+  .page {
+    margin-top: 225px;
+  }
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-control {
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: aliceblue;
+  background-clip: padding-box;
+  border: 1px solid #3a3a3a;
+  border-radius: 0.25rem;
+  padding: 3px;
+}
+
+#email {
+  width: 70%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+#submit {
+  font-weight: bolder;
+  background-color: #fac399;
+  transition: 0.4s;
+  border-radius: .3rem;
+}
+
+#submit:hover {
+  font-weight: bolder;
+  background-color: #dfb08d;
+}
+
+.features {
+  margin-top: 50px;
+}
+
+.features .fa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: black 3px ;
+}
+
+.features .desc {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px){
+
+  .container {
+    text-align: center;
+  }
+
+  .features .fa{
+    display: none;
+  }
+
+  .features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+  }
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  background-color: aliceblue;
+  outline: black 2px solid;
+  height: 300px;
+  width: 250px;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto 0 auto
+  }
+}
+
+.price-title {
+  background-color: #d3d3d3;
+  padding: 5px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.price-description {
+  padding: 10px;
+}
+
+.button {
+  height: 35px;
+  margin: 15px auto 15px auto;
+  width: 150px;
+  font-size: inherit;
+  font-weight: bolder;
+  background-color: #fac399;
+  transition: 0.4s;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  font-weight: bolder;
+  background-color: #dfb08d;
+}
