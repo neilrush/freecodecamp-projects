@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Technical Documentation Page</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="Technical Documentation.css" />
+  </head>
+  <body>
+    <div id="dark-mode-container"><button id="dark-mode-button"><i class="material-icons" id="dark-mode"> dark_mode </i></button></div>
+    <nav id="navbar">
+      <header>RuneLite Docs</header>
+      <div id="nav-link-list">
+        <a class="nav-link" href="#Agility_Configuration"
+          >Agility Configuration</a
+        >
+        <a class="nav-link" href="#Camera_Configuration"
+          >Camera Configuration</a
+        >
+        <a class="nav-link" href="#GPU_Configuration">GPU Configuration</a>
+        <a class="nav-link" href="#Grand_Exchange_Configuration"
+          >Grand Exchange Configuration</a
+        >
+        <a class="nav-link" href="#Ground_Items_Configuration"
+          >Ground Items Configuration</a
+        >
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section id="Agility_Configuration" class="main-section">
+        <header>Agility Configuration</header>
+        <p>
+          <img
+            src="https://user-images.githubusercontent.com/40111569/55203968-6521b780-519b-11e9-8708-81f96f18f4e1.gif"
+            alt="Client View"
+            style="width: 700px"
+          />
+        </p>
+        <h2>Settings</h2>
+        <h3 id="show-clickboxes">Show Clickboxes</h3>
+        <p>Show agility course obstacle clickboxes.</p>
+        <h3 id="show-lap-count">Show Lap count</h3>
+        <p>
+          Displays an infobox with <code>Total Laps</code>,
+          <code>Laps until goal</code>, and <code>Laps per hour</code>.
+        </p>
+        <h3 id="hide-lap-count-minutes-configurable-box-">
+          Hide Lap Count (minutes) [Configurable Box]
+        </h3>
+        <p>
+          Configures how much time without gained XP until the lap counter is
+          hidden.
+        </p>
+        <h3 id="show-laps-until-goal">Show Laps Until Goal</h3>
+        <p>Show number of laps remaining until goal is reached.</p>
+        <h3 id="show-laps-per-hour">Show Laps per Hour</h3>
+        <p>Shows how many laps you can expect to complete per hour.</p>
+        <h3 id="overlay-color-pick-a-color-">Overlay Color [Pick a color]</h3>
+        <p>Customize the color for Agility obstacle overlays.</p>
+        <h3 id="highlight-marks-of-grace">Highlight Marks of Grace</h3>
+        <p>Enable/disable the highlighting of retrievable Marks of Grace.</p>
+        <h3 id="mark-highlight-color">Mark Highlight Color</h3>
+        <p>Color of highlighted Marks of Grace.</p>
+        <h3 id="highlight-portals">Highlight Portals</h3>
+        <p>Enable/disable the highlighting of Prifddinas portals.</p>
+        <h3 id="portals-highlight-color">Portals Highlight Color</h3>
+        <p>Color of the highlighted Prifddinas portals.</p>
+        <h3 id="highlight-agility-shortcuts">Highlight Agility Shortcuts</h3>
+        <p>Enable/disable the highlighting of Agility shortcuts.</p>
+        <h3 id="show-trap-overlay">Show Trap Overlay</h3>
+        <p>Enable/disable the highlighting of traps on Agility courses.</p>
+        <h3 id="trap-overlay-color">Trap Overlay Color</h3>
+        <p>Color of Agility trap overlay.</p>
+        <h3 id="agility-arena-notifier">Agility Arena notifier</h3>
+        <p>Notify on ticket location change in Agility Arena.</p>
+        <h3 id="agility-arena-timer">Agility Arena timer</h3>
+        <p>Configured whether Agility Arena timer is displayed.</p>
+        <h3 id="highlight-stick">Highlight Stick</h3>
+        <p>Highlight the retrievable stick in the Werewolf Agility Course.</p>
+        <h3 id="stick-highlight-color">Stick Highlight Color</h3>
+        <p>Color of highlighted stick in the Werewolf Agility Course.</p>
+      </section>
+
+      <section id="Camera_Configuration" class="main-section">
+        <header>Camera Configuration</header>
+        <p>
+          <a href="https://gfycat.com/RipeCraftyBison"
+            ><img
+              src="https://thumbs.gfycat.com/RipeCraftyBison-size_restricted.gif"
+              alt="Client View"
+          /></a>
+        </p>
+        <h2 id="camera">Camera</h2>
+        <h3 id="expand-inner-zoom-limit">Expand Inner Zoom Limit</h3>
+        <p>Allows you to zoom in closer.</p>
+        <h3 id="expand-outer-zoom-limit">Expand Outer Zoom Limit</h3>
+        <p>
+          Allows you to increase or decrease the furthest distance to which you
+          can zoom out. (Default 0, Min -400, Max 400)
+        </p>
+        <h3 id="vertical-camera">Vertical Camera</h3>
+        <p>
+          When the camera moves vertically, this option allows it to move higher
+          than default.
+        </p>
+        <h3 id="control-function">Control Function</h3>
+        <p>
+          Disables zoom unless the <code>Control</code> key is pressed, or
+          allows the <code>Control</code> key to reset your zoom level.
+        </p>
+        <h3 id="reset-zoom-position">Reset zoom position</h3>
+        <p>
+          The position to which zoom is reset if the
+          <code>Reset zoom</code> option of <code>Control Function</code> is
+          selected. (Default 512, Min -400, Max 1004)
+        </p>
+        <h3 id="zoom-speed">Zoom Speed</h3>
+        <p>The speed at which you can zoom the camera. (Default 25)</p>
+        <h3 id="right-click-moves-camera">Right click moves camera</h3>
+        <p>
+          Remaps right click to middle mouse click if there are no menu options.
+        </p>
+        <h3 id="ignore-examine">Ignore Examine</h3>
+        <p>Ignore the Examine menu entry for right-click moving the camera.</p>
+        <h3 id="middle-button-opens-menu">Middle-button opens menu</h3>
+        <p>Middle-mouse button always opens the menu.</p>
+        <h3 id="compass-options">Compass options</h3>
+        <p>
+          Adds Look South, East, and West to the compass&#39; right-click menu.
+        </p>
+        <p>
+          <img
+            width="103"
+            src="https://user-images.githubusercontent.com/54762282/83596810-9fbb7880-a533-11ea-940d-5b12877f63c9.png"
+          />
+        </p>
+        <h3 id="invert-yaw">Invert Yaw</h3>
+        <p>
+          Moves the camera in the opposite direction when moving horizontally.
+        </p>
+        <h3 id="invert-pitch">Invert Pitch</h3>
+        <p>
+          Moves the camera in the opposite direction when moving vertically.
+        </p>
+      </section>
+
+      <section id="GPU_Configuration" class="main-section">
+        <header>GPU Configuration</header>
+        <p>
+          <img
+            src="https://i.imgur.com/ZI4Y7d3.png"
+            alt="Example of anti-aliasing"
+          />
+        </p>
+        <h2>Settings</h2>
+        <h3 id="draw-distance">Draw Distance</h3>
+        <p>Draw distance counted in game tiles. Max value is 90.</p>
+        <p>
+          Note: Extended draw distance (&gt;25) not currently available on
+          MacOS.
+        </p>
+        <h3 id="remove-color-banding">Remove Color Banding</h3>
+        <p>
+          Smooths out the color banding that is present in the CPU renderer.
+        </p>
+        <h3 id="anti-aliasing">Anti Aliasing</h3>
+        <p>Configures the anti-aliasing mode.</p>
+        <h3 id="ui-scaling-mode">UI Scaling mode</h3>
+        <p>
+          Sampling function to use for the UI in
+          <a href="https://github.com/runelite/runelite/wiki/Stretched-Mode"
+            >stretched mode</a
+          >
+        </p>
+        <ul>
+          <li><h4 id="nearest-neighbor">Nearest Neighbor</h4></li>
+          <li><h4 id="bilinear">Bilinear</h4></li>
+          <li><h4 id="bicubic-mitchell-">Bicubic (Mitchell)</h4></li>
+          <li><h4 id="bicubic-catmull-rom-">Bicubic (Catmull-Rom)</h4></li>
+          <li><h4 id="xbr">xBR</h4></li>
+        </ul>
+        <h3 id="fog-depth">Fog Depth</h3>
+        <p>
+          Distance from the edge of scene at which to start drawing fog. Max
+          value is 100.
+        </p>
+        <h3 id="compute-shaders">Compute Shaders</h3>
+        <p>Enables extended draw distance on supported devices.</p>
+      </section>
+
+      <section id="Grand_Exchange_Configuration" class="main-section">
+        <header>Grand Exchange Configuration</header>
+        <p>
+          <a href="https://gfycat.com/UnfoldedAgonizingAmericankestrel"
+            ><img
+              src="https://thumbs.gfycat.com/UnfoldedAgonizingAmericankestrel-size_restricted.gif"
+              alt="Client View"
+          /></a>
+        </p>
+        <p>
+          This plugin, when enabled, allows the user to &#39;Alt + Left
+          Click&#39; on an item sold in the GE and lookup that item in the GE
+          tab on the side.
+        </p>
+        <h2>Settings</h2>
+        <h3 id="1-hotkey-lookup-alt-left-click-">
+          1. Hotkey Lookup (Alt + Left click)
+        </h3>
+        <p>
+          (Default On) If disabled, you will have to search for the item
+          manually in the GE tab on the right-hand side of the client, look for
+          the <img src="https://i.imgur.com/W7xX2av.png" alt="CoinBag" /> icon.
+        </p>
+      </section>
+
+      <section id="Ground_Items_Configuration" class="main-section">
+        <header>Ground Items Configuration</header>
+        <p>
+          The Ground Items plugin highlights ground items and/or displays their
+          Grand Exchange or High Alchemy information
+        </p>
+        <p>
+          <img
+            src="https://runelite.net/img/features/grounditems.png"
+            alt="Ground items demonstration"
+          />
+        </p>
+        <h2 id="item-lists">Item Lists</h2>
+        <h3 id="highlighted-items">Highlighted Items</h3>
+        <p>Configures specifically highlighted ground items.</p>
+        <ul>
+          <li><strong>Format:</strong> <code>item</code>, <code>item</code></li>
+        </ul>
+        <h3 id="hidden-items">Hidden Items</h3>
+        <p>Configures hidden ground items.</p>
+        <ul>
+          <li><strong>Format:</strong> <code>item</code>, <code>item</code></li>
+        </ul>
+        <h2>Settings</h2>
+        <h3 id="show-highlighted-items-only">Show Highlighted items only</h3>
+        <p>
+          Configures whether or not to draw items only on your highlighted list.
+        </p>
+        <h3 id="do-not-hide-untradeables">Do not hide untradeables</h3>
+        <p>
+          Configures whether or not untradeable items ignore hiding under
+          settings.
+        </p>
+        <h3 id="show-menu-item-quantities">Show Menu Item Quantities</h3>
+        <p>
+          Configures whether or not to show the item quantities in the menu.
+        </p>
+        <h3 id="recolor-menu-hidden-items">Recolor Menu Hidden Items</h3>
+        <p>
+          Configures whether or not <code>hidden items</code> in right-click
+          menu will be recolored.
+        </p>
+        <h3 id="highlight-tiles">Highlight Tiles</h3>
+        <p>
+          Configures whether or not to highlight tiles containing ground items.
+        </p>
+        <h3 id="notify-for-highlighted-drops">Notify for Highlighted drops</h3>
+        <p>
+          Configures whether or not to notify for drops on your highlighted
+          list.
+        </p>
+        <h3 id="notify-tier">Notify &gt;= Tier</h3>
+        <p>
+          Configures which price tiers will trigger a notification on item drop.
+        </p>
+        <h3 id="price-display-mode">Price Display Mode</h3>
+        <p>
+          Configures which price types are shown alongside ground item name.
+        </p>
+        <h3 id="item-highlight-mode">Item Highlight Mode</h3>
+        <p>Configures how ground items will be highlighted.</p>
+        <h3 id="menu-highlight-mode">Menu Highlight Mode</h3>
+        <p>Configures what to highlight in right-click menu.</p>
+        <h3 id="highlight-value-calculation">Highlight Value Calculation</h3>
+        <p>Configures which coin value is used to determine highlight color.</p>
+        <h3 id="highlight-gt-value">Highlight &gt; Value</h3>
+        <p>Configures highlighted ground items over either GE or HA value.</p>
+        <h3 id="hide-lt-value">Hide &lt; Value</h3>
+        <p>Configures hidden ground items under both GE and HA value.</p>
+        <h3 id="default-items-color">Default items color</h3>
+        <p>Configures the color for default, non-highlighted items</p>
+        <h3 id="highlighted-items-color">Highlighted items color</h3>
+        <p>Configures the color for highlighted items.</p>
+        <h3 id="hidden-items-color">Hidden items color</h3>
+        <p>
+          Configures the color for hidden items in right-click menu and when
+          holding <code>Alt</code>.
+        </p>
+        <h3 id="low-value-items-color">Low value items color</h3>
+        <p>Configures the color for low value items.</p>
+        <h3 id="low-value-price">Low value price</h3>
+        <p>Configures the start price for low value items.</p>
+        <h3 id="medium-value-items-color">Medium value items color</h3>
+        <p>Configures the color for medium value items.</p>
+        <h3 id="medium-value-price">Medium value price</h3>
+        <p>Configures the start price for medium value items.</p>
+        <h3 id="high-value-items-color">High value items color</h3>
+        <p>Configures the color for high value items.</p>
+        <h3 id="high-value-price">High value price</h3>
+        <p>Configures the start price for high value items.</p>
+        <h3 id="insane-value-items-color">Insane value items color</h3>
+        <p>Configures the color for insane value items.</p>
+        <h3 id="insane-value-price">Insane value price</h3>
+        <p>Configures the start price for insane value items.</p>
+        <h3 id="only-show-loot">Only show loot</h3>
+        <p>Only shows drops from NPCs and players.</p>
+        <h3 id="delay-for-double-tap-alt-to-hide">
+          Delay for double-tap ALT to hide
+        </h3>
+        <p>
+          Decrease this number if you accidentally hide ground items often.
+          <code>0</code> = Disabled.
+        </p>
+        <h3 id="collapse-ground-item-menu-entries">
+          Collapse ground item menu entries
+        </h3>
+        <p>Collapses ground item menu entries together and appends count.</p>
+        <h3 id="show-despawn-timers">Show despawn timers</h3>
+        <p>
+          Shows a green timer
+          <img
+            src="https://user-images.githubusercontent.com/54762282/83222640-c9952980-a146-11ea-97d5-d06b0cc1e8f6.png"
+            alt="Green Timer"
+          />
+          that counts down until items dropped or received as loot are visible
+          to other players.
+        </p>
+        <p>
+          Shows a yellow timer
+          <img
+            src="https://user-images.githubusercontent.com/54762282/83222638-c9952980-a146-11ea-9d6c-6ff7aeee5841.png"
+            alt="Yellow Timer"
+          />
+          that counts down until items dropped or received as loot despawn.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const projectName = "technical-docs-page";
+    </script>
+    <script src="Technical Documentation.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -28,17 +28,13 @@ body {
     background: rgba(58, 58, 58, 0.9);
     padding: 1rem;
     border-radius: 0.25rem;
-  }
-
-  @media (max-width: 350px) {
-    body {
-      font-size: .8rem;
-    }
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
   }
 
   a:link {
     font-size: 1.25rem;
     color:rgb(107, 192, 248);
+    text-decoration: none;
   }
 
   a:visited {
@@ -49,8 +45,21 @@ body {
     color:rgb(73, 131, 170);
   }
 
+  a:visited:hover {
+    color:rgb(115, 81, 187)
+  }
+
   .project-link {
     display: flex;
     align-items: center;
     margin: 1rem;
+  }
+
+  @media (max-width: 350px) {
+    body {
+      font-size: .8rem;
+    }
+    a:link {
+      font-size: 1.05rem;
+    }
   }
