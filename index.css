@@ -1,65 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+:root {
+  color-scheme: dark;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    color: aliceblue;
-    font-size: 1rem;
-    background-color: rgb(96, 107, 211);
-    min-width: 250px;
-  }
-  
-  @media (max-width: 350px) {
-    body {
-      font-size: .8rem;
-    }
-  }
+  --navbar-height: 50px;
+  --text-color: aliceblue;
+  --background-color-1: rgb(96, 107, 211);
+  --background-color-2: rgb(61, 62, 73);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  font-size: 1rem;
+  background-color: var(--background-color-1);
+  min-width: 280px;
+  scrollbar-color: dark;
+}
 
-  .title {
-      text-align: center;
-  }
+#navbar {
+  padding: 0 30px;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color-2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: var(--navbar-height);
+  z-index: 100;
+}
 
-  .category-header {
-      padding: 0%;
-      margin: 0 0 1rem 0;
-  }
+.navbar-section {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  height: var(--navbar-height);
+  z-index: 100;
+}
 
-  .project-group {
-    max-width: 500px;
-    margin: 0.1rem auto 0.1rem auto;
-    background: rgba(58, 58, 58, 0.9);
-    padding: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+@media (max-width: 330px) {
+  #navbar {
+    padding: 0 5px;
   }
+}
 
-  a:link {
-    font-size: 1.25rem;
-    color:rgb(107, 192, 248);
-    text-decoration: none;
-  }
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
 
-  a:visited {
-    color:rgb(152, 107, 248);
+@media (hover: hover) {
+  .nav-link:hover {
+    background-color: rgb(46, 47, 54);
   }
+}
+.nav-link:active {
+  background-color: rgb(84, 86, 100);
+  transition: none;
+}
 
-  a:hover {
-    color:rgb(73, 131, 170);
-  }
+#logo {
+  height: 100%;
+  align-self: center;
+  min-height: 0;
+}
 
-  a:visited:hover {
-    color:rgb(115, 81, 187)
-  }
+.inline-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .project-link {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-  }
+.inline-logo .logo {
+  padding-left: 4px;
+  max-height: 16px;
+  align-self: center;
+}
 
-  @media (max-width: 350px) {
-    body {
-      font-size: .8rem;
-    }
-    a:link {
-      font-size: 1.05rem;
-    }
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color-2);
+}
+
+#welcome-image {
+  max-width: 100%;
+  transform: scale(0.5);
+}
+
+.section-title {
+  font-size: 2.1875rem;
+  width: 100%;
+  padding: 3.75rem 0rem 3.125rem 0;
+  margin: 0 auto 0 auto;
+}
+
+#projects {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.project-tile {
+  margin: 1.25rem;
+  background-color: var(--background-color-2);
+  border-radius: 10px;
+  width: 34.375rem;
+}
+
+@media (max-width: 1200px) {
+  .project-tile {
+    width: 26.5625rem;
   }
+}
+
+.project-tile .project-render {
+  padding: 0 2.5rem 0.625rem 2.5rem;
+  width: 100%;
+}
+
+.project-tile .project-render img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.25rem;
+}
+
+.project-link {
+  margin: 0 0.625rem;
+  padding: 0.3125rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--background-color-1);
+  border-radius: 5px;
+  width: 7.8125rem;
+  transition: background-color 0.2s;
+}
+
+@media (hover: hover) {
+  .project-link:hover {
+    background-color: rgb(89, 98, 177);
+  }
+}
+
+.project-link:active {
+  background-color: rgb(110, 124, 243);
+  transition: none;
+}
+
+#footer {
+  min-width: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: var(--background-color-2);
+}
+
+.footer-section {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+}
+
+#footer a {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.footer-image {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 37.5em) {
+  #footer {
+    flex-direction: column;
+    height: 150px;
+  }
+  .footer-section {
+    max-height: none;
+  }
+}
+
+@media (max-width: 34.375em) {
+  html {
+    font-size: 0.9rem;
+  }
+}

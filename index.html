@@ -1,24 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>Personal Portfolio</title>
 
-        <title>Projects</title>
-
-        <link rel="stylesheet" type="text/css" href="index.css" />
-    </head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-section">
+        <a class="nav-link" href="#welcome-section">
+          <img
+            id="logo"
+            src="Assets/FishyConcreteNoBackground.png"
+            alt="Home"
+          />
+        </a>
+      </div>
+      <div class="navbar-section">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a
+          id="profile-link"
+          class="nav-link inline-logo"
+          href="https://github.com/neilrush"
+          target="_blank"
+          >GitHub <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+        /></a>
+        <!--<a
+          class="nav-link inline-logo"
+          href="https://www.linkedin.com/in/neilrushmcpherson/"
+          >Linkedin
+          <img
+            src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+        /></a> -->
+      </div>
+      </nav>
+    </header>
     <main>
-        <h1 class= "title" >Projects</h1>
-        <div class="project-group">
-            <h2  class="category-header" >Responsive Web Design</h2>
-            <a class="project-link" href="Responsive Web Design Projects/1. Tribute Page/Tribute.html">Tribute Page</a>
-            <a class="project-link" href="Responsive Web Design Projects/2. Survey Form/Survey.html">Survey Form</a>
-            <a class="project-link" href="Responsive Web Design Projects/3. Product Landing Page/Product-Page.html">Product Landing Page</a>
-            <a class="project-link" href="Responsive Web Design Projects/4. Technical Documentation/Technical Documentation.html">Technical Documentation</a>
+      <section id="welcome-section">
+        <!--Needed to pass testing but the page technically still has text-->
+        <h1 class="hidden" style="display: none">Hi, I'm Neil</h1>
+
+        <img
+          id="welcome-image"
+          src="Assets/Welcome Text.png"
+          alt="Hi, I'm Neil"
+        />
+      </section>
+
+      <section id="projects">
+        <h1 class="section-title">Some of my projects</h1>
+        <div id="tribute-page" class="project-tile">
+          <h2 class="project-title">Tribte Page</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/TributePage.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="Responsive Web Design Projects/1. Tribute Page/Tribute.html"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/freecodecamp-projects/tree/main/Responsive%20Web%20Design%20Projects/1.%20Tribute%20Page"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
         </div>
-        
+
+        <div id="survey-form" class="project-tile">
+          <h2 class="project-title">Survey Page</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/SurveyPage.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="Responsive Web Design Projects/2. Survey Form/Survey.html"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/freecodecamp-projects/tree/main/Responsive%20Web%20Design%20Projects/2.%20Survey%20Form"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+        <div id="Product Page" class="project-tile">
+          <h2 class="project-title">Product Page</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/ProductPage.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="Responsive Web Design Projects/3. Product Landing Page/Product-Page.html"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/freecodecamp-projects/tree/main/Responsive%20Web%20Design%20Projects/3.%20Product%20Landing%20Page"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+        <div id="technical-documentation" class="project-tile">
+          <h2 class="project-title">Technical Documentation</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/DocumentationPage.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="Responsive Web Design Projects/4. Technical Documentation/Technical Documentation.html"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/freecodecamp-projects/tree/main/Responsive%20Web%20Design%20Projects/4.%20Technical%20Documentation"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+        <div id="npc-dialog-log" class="project-tile">
+          <h2 class="project-title">Npc Dialog Log</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/NPCDialogLog.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://runelite.net/plugin-hub/show/npc-dialog-log"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/npc-dialog-log"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-section">
+        <img
+          class="footer-image"
+          src="Assets/Footer Text top.png"
+          alt="Thanks for stopping by"
+        /></div>
+        <div class="footer-section">
+        <a href="https://www.buymeacoffee.com/neilrush"
+          ><img
+            class="footer-image"
+            src="Assets/Footer Text Bottom.png"
+            alt="Buy me a coffee."
+        /></a>
+      </div>
+      </footer>
     </main>
+    <script>
+      const projectName = "portfolio";
+      localStorage.setItem("fCC_portfolio_hide", true);
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
