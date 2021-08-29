@@ -110,7 +110,7 @@ body {
 .section-title {
   font-size: 2.1875rem;
   width: 100%;
-  padding: 3.75rem 0rem 3.125rem 0;
+  padding: 60px 0rem 3.125rem 0;
   margin: 0 auto 0 auto;
 }
 
@@ -152,6 +152,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: .8rem;
   padding-bottom: 1.25rem;
 }
 
@@ -223,4 +224,14 @@ body {
   html {
     font-size: 0.8rem;
   }
+}
+
+@media screen and (orientation: landscape) and (min-aspect-ratio: 4/3) and (max-height: 62.5rem) {
+  html {
+    font-size: 0.8rem;
+  }
+  .project-tile {
+    width: 300px;
+  }
+  
 }
