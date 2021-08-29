@@ -128,9 +128,10 @@ body {
   background-color: var(--background-color-2);
   border-radius: 10px;
   width: 34.375rem;
+  box-shadow: 3px 3px 7px black ;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75em) {
   .project-tile {
     width: 26.5625rem;
   }
@@ -205,7 +206,7 @@ body {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 @media (max-width: 37.5em) {
@@ -220,6 +221,6 @@ body {
 
 @media (max-width: 34.375em) {
   html {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
