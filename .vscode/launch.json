@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Technical Documentation",
+        "url": "http://127.0.0.1:5555/Responsive%20Web%20Design%20Projects/4.%20Technical%20Documentation/Technical%20Documentation.html"
+      }
+    ]
+  }
